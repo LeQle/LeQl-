@@ -1,1 +1,431 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LeQle | Restobar & Delivery</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#2f2f2f;
+color:#fff;
+line-height:1.6;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('portada.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-family:'Montserrat',sans-serif;
+font-size:5.8rem;
+font-weight:800;
+letter-spacing:5px;
+color:white;
+}
+
+.hero p{
+font-size:1.4rem;
+letter-spacing:3px;
+margin-top:10px;
+margin-bottom:35px;
+color:#ddd;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn{
+background:#b22222;
+color:white;
+padding:14px 28px;
+border-radius:50px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.btn:hover{
+background:#d63031;
+transform:translateY(-4px);
+}
+
+.section{
+max-width:1200px;
+margin:auto;
+padding:90px 20px;
+}
+
+.section-title{
+font-family:'Montserrat',sans-serif;
+font-size:2.6rem;
+font-weight:800;
+letter-spacing:2px;
+text-transform:uppercase;
+text-align:center;
+margin-bottom:20px;
+color:white;
+}
+
+.subtitle{
+max-width:800px;
+margin:auto;
+text-align:center;
+color:#cfcfcf;
+margin-bottom:50px;
+}
+
+.buscador{
+max-width:600px;
+margin:0 auto 40px;
+}
+
+.buscador input{
+width:100%;
+padding:18px;
+background:#3a3a3a;
+border:none;
+border-radius:20px;
+color:white;
+font-size:16px;
+outline:none;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:#3b3b3b;
+border-radius:22px;
+padding:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card h3{
+font-family:'Montserrat',sans-serif;
+font-size:1.4rem;
+text-transform:uppercase;
+margin-bottom:20px;
+color:white;
+}
+
+.item{
+padding:12px 0;
+border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.item:last-child{
+border-bottom:none;
+}
+
+.contact{
+background:#242424;
+padding:90px 20px;
+text-align:center;
+}
+
+.contact-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+.contact-buttons a{
+background:#25D366;
+color:white;
+padding:14px 30px;
+border-radius:40px;
+text-decoration:none;
+font-weight:700;
+}
+
+footer{
+background:#171717;
+padding:35px;
+text-align:center;
+color:#999;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:4rem;
+}
+
+.section-title{
+font-size:2rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>LeQle</h1>
+
+<p>Restobar & Delivery</p>
+
+<div class="buttons">
+
+<a href="#menu" class="btn">
+Ver Menú
+</a>
+
+<a href="https://wa.me/5493443624422" class="btn" target="_blank">
+WhatsApp
+</a>
+
+<a href="https://maps.google.com/?q=Sansoni+2045+Concepción+del+Uruguay" class="btn" target="_blank">
+Cómo llegar
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Nuestra Propuesta
+</h2>
+
+<p class="subtitle">
+En LeQle creemos que cada comida merece disfrutarse. Te esperamos con pizzas, empanadas, milanesas, chivitos y papas para compartir con amigos o pedir desde la comodidad de tu casa mediante nuestro servicio de delivery.
+</p>
+
+</section>
+
+<section id="menu" class="section">
+
+<h2 class="section-title">
+Menú
+</h2>
+
+<div class="buscador">
+<input type="text" id="buscador" placeholder="Buscar en la carta...">
+</div>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<h3>Pizzas</h3>
+
+<div class="item">MUZZARELLA — $0000</div>
+<div class="item">NAPOLITANA — $0000</div>
+<div class="item">ESPECIAL — $0000</div>
+<div class="item">CALABREZA — $0000</div>
+<div class="item">FUGAZZETA — $0000</div>
+<div class="item">PANCETA — $0000</div>
+<div class="item">ROQUEFORT — $0000</div>
+<div class="item">RÚCULA C/ CRUDO — $0000</div>
+<div class="item">TROPICAL — $0000</div>
+<div class="item">CARIOCA — $0000</div>
+
+</div>
+
+<div class="card">
+
+<h3>Empanadas</h3>
+
+<div class="item">JAMÓN Y QUESO — $0000</div>
+<div class="item">CARNE — $0000</div>
+<div class="item">POLLO — $0000</div>
+<div class="item">VERDURA — $0000</div>
+<div class="item">BONDIOLA — $0000</div>
+<div class="item">HUMITA — $0000</div>
+
+</div>
+
+<div class="card">
+
+<h3>Milanesas</h3>
+
+<div class="item">POLLO — $0000</div>
+<div class="item">CARNE — $0000</div>
+<div class="item">NAPOLITANA — $0000</div>
+
+</div>
+
+<div class="card">
+
+<h3>Chivitos</h3>
+
+<div class="item">AL PLATO — $0000</div>
+<div class="item">AL PAN — $0000</div>
+
+</div>
+
+<div class="card">
+
+<h3>Papas Fritas</h3>
+
+<div class="item">CHEDDAR — $0000</div>
+<div class="item">CHEDDAR Y PANCETA — $0000</div>
+<div class="item">SIMPLES — $0000</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">
+Información
+</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<h3>Ubicación</h3>
+
+<p>
+Sansoni 2045<br>
+Concepción del Uruguay
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Horarios</h3>
+
+<p>
+Miércoles a Domingo<br>
+Desde las 20:00 hs
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Delivery</h3>
+
+<p>
+Pedidos y consultas por WhatsApp
+</p>
+
+<br>
+
+<p style="font-size:24px;font-weight:700;">
+3443 62-4422
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2 class="section-title">
+Contactanos
+</h2>
+
+<p>
+LeQle Restobar & Delivery
+</p>
+
+<div class="contact-buttons">
+
+<a href="https://wa.me/5493443624422" target="_blank">
+WhatsApp
+</a>
+
+<a href="https://maps.google.com/?q=Sansoni+2045+Concepción+del+Uruguay" target="_blank">
+Google Maps
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+LeQle · Restobar & Delivery
+</p>
+
+</footer>
+
+<script>
+
+const buscador=document.getElementById("buscador");
+
+buscador.addEventListener("keyup",function(){
+
+let texto=buscador.value.toLowerCase();
+
+let items=document.querySelectorAll(".item");
+
+items.forEach(item=>{
+
+if(item.textContent.toLowerCase().includes(texto)){
+item.style.display="block";
+}else{
+item.style.display="none";
+}
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
