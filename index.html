@@ -407,23 +407,37 @@ LeQle · Restobar & Delivery
 
 <script>
 
-const buscador=document.getElementById("buscador");
+const buscador = document.getElementById("buscador");
 
-buscador.addEventListener("keyup",function(){
+buscador.addEventListener("keyup", function () {
 
-let texto=buscador.value.toLowerCase();
+    let texto = buscador.value.toLowerCase();
 
-let items=document.querySelectorAll(".item");
+    let cards = document.querySelectorAll(".card");
 
-items.forEach(item=>{
+    cards.forEach(card => {
 
-if(item.textContent.toLowerCase().includes(texto)){
-item.style.display="block";
-}else{
-item.style.display="none";
-}
+        let items = card.querySelectorAll(".item");
+        let visibles = 0;
 
-});
+        items.forEach(item => {
+
+            if (item.textContent.toLowerCase().includes(texto)) {
+                item.style.display = "block";
+                visibles++;
+            } else {
+                item.style.display = "none";
+            }
+
+        });
+
+        if (visibles > 0 || texto === "") {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
 
 });
 
